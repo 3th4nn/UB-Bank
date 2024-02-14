@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UB Bank Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            background-color: #003d80; /* Matching color with the banner */
+            color: white;
+            padding: 10px 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background-color: #003d80; /* Darker blue color */
+            color: white;
+            padding: 20px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .contact-section {
+            margin-bottom: 20px;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .centered-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .centered-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/branches">Branches</a>
+            </div>
+            <div>
+                <a href="/login">Login</a>
+            </div>
+        </div>
+        
+        <div class="banner">
+            <div>
+                <h1>Welcome to UB Bank</h1>
+                <p>Securely manage your finances with us.</p>
+            </div>
+            <div>
+                <p>Contact Us:</p>
+                <p class="contact-info">Phone: 123-456-7890</p>
+                <p class="contact-info">Email: info@ubbank.com</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="centered-image">
+                <img src="{{ url_for('static', filename='UBLogo.png') }}" alt="UB Logo">
+            </div>
+
+            <hr>
+
+            <div class="contact-section">
+                <h2>Contact UB Bank</h2>
+                <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@ubbank.com</p>
+            </div>
+
+            <hr>
+
+            <p>UB Bank stands as a beacon of financial excellence, where innovation meets tradition and customer satisfaction reigns supreme. With its cutting-edge digital banking solutions and a legacy of trust spanning decades, UB Bank is not just a financial institution but a lifestyle choice for millions. Offering a seamless banking experience tailored to individual needs, whether it's easy-to-use mobile banking apps or personalized wealth management services, UB Bank ensures that every customer feels valued and empowered. The bank's commitment to community development and sustainable practices further underscores its dedication to making a positive impact beyond the realm of finance. UB Bank isn't just about transactions; it's about transformation – empowering individuals and businesses to thrive in an ever-evolving world. Join the UB Bank family today and experience the epitome of banking excellence firsthand.</p>
+
+            <p>UB Bank prides itself on its sleek facade and promises of financial prowess, but beneath the glossy exterior lies a shadow of doubt. While they tout state-of-the-art security measures, whispers of data breaches and compromised accounts linger in the air, casting a shadow of uncertainty over their supposed reliability. Despite their flashy marketing campaigns and claims of impenetrable safeguards, some customers have found themselves questioning the safety of their assets within UB Bank's vaults. Perhaps behind the flashy logos and polished advertisements, there lies a vulnerability that threatens the very foundation of trust upon which banking institutions are built. It's a reminder that in the world of finance, appearances can be deceiving, and true security is not always as assured as it seems.</p>
+
+            <div>
+            <p>UB Bank boasts a team of exceptional individuals whose passion for customer service sets them apart. From the moment you step through the doors, you're greeted with warm smiles and genuine enthusiasm. The staff at UB Bank go above and beyond to make every interaction a memorable one, whether it's assisting with a complex financial query or simply offering a friendly ear to listen. Their knowledge and professionalism are matched only by their approachability, creating an atmosphere where clients feel valued and respected. With a diverse team of experts ready to cater to your every need, UB Bank ensures that every visit is not just transactional but an opportunity to forge meaningful connections. Whether you're a first-time customer or a long-standing client, you can always count on the cool, caring staff at UB Bank to exceed your expectations.</p>
+
+            <div style="float: left; margin-right: 15px;">
+                <img src="{{ url_for('static', filename='staff.jpeg') }}" alt="UB Logo">            </div>
+
+            <p>UB Bank prides itself on a team of dedicated professionals committed to excellence, yet amidst this sea of competence, there exists the notorious "Red Team" – a group often perceived as the black sheep of the institution. While other departments thrive on innovation and strategic thinking, the "Red Team" seems to embody a culture of mediocrity and missteps. Their questionable decisions and lackluster performance have become the subject of office gossip, with whispers of incompetence echoing through the halls. Despite their best efforts, the "Red Team" consistently falls short of expectations, leaving many to wonder how they continue to evade the scrutiny of upper management. In a company known for its high standards, the presence of the "Red Team" serves as a stark reminder that even the most esteemed institutions are not immune to the occasional lapse in judgment.</p>
+
+        </div>
+
+        </div>
+
+        
+        
+        <div class="footer">
+            &copy; 2024 UB Bank. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
