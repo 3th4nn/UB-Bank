@@ -1,0 +1,12 @@
+#Add lines after "DocumentRoot /var/www/html"
+#Line 12 in file /etc/apache2/sites-available
+
+WSGIDaemonProcess bankapp threads=5
+WSGIScriptAlias / /var/www/html/UB-Bank/server.wsgi 
+WSGIApplicationGroup %{GLOBAL}
+<Directory UB-Bank>
+    WSGIProcessGroup bankapp
+    WSGIApplicationGroup %{GLOBAL}
+    Order deny,allow
+    Allow from allow
+</Directory>
